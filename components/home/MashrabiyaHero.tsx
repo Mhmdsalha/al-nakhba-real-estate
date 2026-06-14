@@ -1,0 +1,38 @@
+import Image from "next/image";
+import { ButtonLink } from "@/components/ui/ButtonLink";
+import { GlassCard } from "@/components/ui/GlassCard";
+import { images } from "@/lib/images";
+
+export function MashrabiyaHero() {
+  return (
+    <section className="hero-frame lattice" aria-label="واجهة النخبة للعقارات">
+      <div className="hero-bg">
+        <Image src={images.hero} alt="فيلا فاخرة بإضاءة معمارية" fill priority sizes="100vw" />
+      </div>
+      <div className="hero-scrim" />
+      <div className="hero-content">
+        <div className="hero-copy">
+          <span className="chip">الرياض وجدة</span>
+          <h1 className="display-title">عقارك يبدأ من النخبة</h1>
+          <p>فرص عقارية مختارة في الرياض وجدة، بخبرة تحفظ القرار والقيمة.</p>
+          <div className="hero-actions">
+            <ButtonLink href="/contact">تحدث مع مستشار</ButtonLink>
+            <ButtonLink href="#projects" variant="glass">
+              استعرض المشاريع
+            </ButtonLink>
+          </div>
+        </div>
+        <GlassCard className="hero-floating start">
+          <span className="eyebrow">متاح الآن</span>
+          <strong>٤٥</strong>
+          <span className="muted">مشروعاً وفرصة مختارة بين الرياض وجدة.</span>
+        </GlassCard>
+        <GlassCard className="hero-floating end">
+          <span className="eyebrow">استشارة خاصة</span>
+          <strong>٢٤ ساعة</strong>
+          <span className="muted">نراجع احتياجك ونرشح المسار الأنسب.</span>
+        </GlassCard>
+      </div>
+    </section>
+  );
+}
