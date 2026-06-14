@@ -60,16 +60,15 @@ export function BranchesMap() {
         </div>
       </div>
       <div className="map-panel contact-map-panel glass-dark" aria-label="خريطة تفاعلية لفروع النخبة">
-        <div className="map-grid" />
-        <svg className="saudi-map" viewBox="0 0 620 520" role="img" aria-label="مواقع الرياض وجدة">
-          <path
-            className="saudi-map-land"
-            d="M171 102 286 70 402 104 485 202 510 322 447 425 315 461 191 405 112 302 123 183Z"
+        <div className="real-map-frame" aria-hidden="true">
+          <iframe
+            title="خريطة المملكة العربية السعودية"
+            src="https://www.openstreetmap.org/export/embed.html?bbox=33.2%2C15.4%2C56.8%2C33.8&layer=mapnik"
+            loading="lazy"
           />
-          <path className="saudi-map-route" d="M226 318 C278 292 334 260 391 232" />
-          <circle className="map-city-dot jeddah-dot" cx="226" cy="318" r="9" />
-          <circle className="map-city-dot riyadh-dot" cx="391" cy="232" r="9" />
-        </svg>
+        </div>
+        <div className="map-vignette" />
+        <div className="map-route-line" aria-hidden="true" />
         <a className="map-pin pin-riyadh" href="https://maps.google.com" target="_blank" rel="noreferrer">
           <MapPin size={18} />
           <strong>الرياض</strong>
