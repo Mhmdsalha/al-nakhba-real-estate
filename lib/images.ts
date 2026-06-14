@@ -27,6 +27,18 @@ export const images = {
     "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=2000&q=88",
   managementHero:
     "https://images.unsplash.com/photo-1600566752355-35792bedcfea?auto=format&fit=crop&w=2000&q=88",
+  investmentHeroMain:
+    "https://images.unsplash.com/photo-1460317442991-0ec209397118?auto=format&fit=crop&w=2000&q=88",
+  investmentHeroDetail:
+    "https://images.unsplash.com/photo-1484154218962-a197022b5858?auto=format&fit=crop&w=1800&q=88",
+  managementHeroMain:
+    "https://images.unsplash.com/photo-1564013799919-ab600027ffc6?auto=format&fit=crop&w=2200&q=88",
+  managementHeroDetail:
+    "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=1800&q=88",
+  projectBuilding:
+    "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=1800&q=88",
+  projectEstate:
+    "https://images.unsplash.com/photo-1448630360428-65456885c650?auto=format&fit=crop&w=1800&q=88",
   portrait1: "/images/team/saudi-executive.svg",
   portrait2: "/images/team/saudi-sales-director.svg",
   portrait3: "/images/team/saudi-investment-advisor.svg",
