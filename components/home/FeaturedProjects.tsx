@@ -4,7 +4,7 @@ import { featuredProjects } from "@/data/site";
 
 export function FeaturedProjects() {
   return (
-    <section className="section" id="projects">
+    <section className="section featured-projects-section" id="projects">
       <div className="container">
         <SectionHeading
           eyebrow="مشاريع مختارة"
