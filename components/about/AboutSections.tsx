@@ -26,13 +26,21 @@ export function CompanyStory() {
 export function Achievements() {
   return (
     <section className="section">
-      <div className="container grid-4">
-        {stats.map((stat) => (
-          <GlassCard className="stat-card" key={stat.label}>
-            <strong>{stat.value}</strong>
-            <h3>{stat.label}</h3>
-          </GlassCard>
-        ))}
+      <div className="container">
+        <SectionHeading
+          eyebrow="أرقامنا"
+          title="أثر واضح"
+          description="إشارات مختصرة على خبرة الفريق وتنوع القرارات التي رافقناها."
+          center
+        />
+        <div className="grid-4">
+          {stats.map((stat) => (
+            <GlassCard className="stat-card" key={stat.label}>
+              <strong>{stat.value}</strong>
+              <h3>{stat.label}</h3>
+            </GlassCard>
+          ))}
+        </div>
       </div>
     </section>
   );
@@ -42,11 +50,11 @@ export function TeamGrid() {
   return (
     <section className="section">
       <div className="container">
-        <SectionHeading eyebrow="الفريق" title="وجوه القرار" />
+        <SectionHeading eyebrow="الفريق" title="فريق سعودي قريب من السوق" />
         <div className="team-grid">
           {team.map((member) => (
             <GlassCard className="team-card" key={member.name}>
-              <div className="portrait">
+              <div className="portrait saudi-portrait">
                 <Image src={member.image} alt={member.name} fill sizes="(max-width: 980px) 100vw, 25vw" />
               </div>
               <h3>{member.name}</h3>
@@ -61,18 +69,36 @@ export function TeamGrid() {
 }
 
 export function Testimonials() {
+  const [featured, ...rest] = testimonials;
+
   return (
-    <section className="section">
+    <section className="section testimonials-section">
       <div className="container">
-        <SectionHeading eyebrow="آراء العملاء" title="ثقة هادئة" />
-        <div className="grid-3">
-          {testimonials.map((testimonial) => (
-            <GlassCard className="testimonial-card" key={testimonial.name}>
-              <p>“{testimonial.quote}”</p>
-              <strong>{testimonial.name}</strong>
-              <span className="stone-text">{testimonial.city}</span>
-            </GlassCard>
-          ))}
+        <SectionHeading
+          eyebrow="آراء العملاء"
+          title="تجارب تقول الكثير"
+          description="نُظهر رأي العميل كجزء من تجربة القرار، لا كمجرد اقتباس عابر."
+        />
+        <div className="testimonials-layout">
+          <GlassCard className="testimonial-feature">
+            <span className="testimonial-mark">،،</span>
+            <p>{featured.quote}</p>
+            <div>
+              <strong>{featured.name}</strong>
+              <span>{featured.city}</span>
+            </div>
+          </GlassCard>
+          <div className="testimonial-stack">
+            {rest.map((testimonial) => (
+              <GlassCard className="testimonial-card" key={testimonial.name}>
+                <p>{testimonial.quote}</p>
+                <div>
+                  <strong>{testimonial.name}</strong>
+                  <span className="stone-text">{testimonial.city}</span>
+                </div>
+              </GlassCard>
+            ))}
+          </div>
         </div>
       </div>
     </section>

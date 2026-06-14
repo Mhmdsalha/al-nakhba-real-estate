@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 900" role="img" aria-label="Saudi real estate executive portrait">
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#2b2119"/>
+      <stop offset="0.55" stop-color="#15110d"/>
+      <stop offset="1" stop-color="#c9a84c"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="32%" cy="18%" r="70%">
+      <stop offset="0" stop-color="#f0ebe1" stop-opacity=".42"/>
+      <stop offset=".55" stop-color="#c9a84c" stop-opacity=".14"/>
+      <stop offset="1" stop-color="#1a1714" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="720" height="900" fill="url(#bg)"/>
+  <rect width="720" height="900" fill="url(#glow)"/>
+  <path d="M118 844c24-170 112-256 242-256s218 86 242 256H118Z" fill="#f4efe6"/>
+  <path d="M242 706c24 42 62 64 118 64s94-22 118-64l-42-122H284l-42 122Z" fill="#dfb996"/>
+  <path d="M214 302c9-102 69-164 146-164s137 62 146 164l16 176c8 91-59 168-162 168s-170-77-162-168l16-176Z" fill="#e6bea0"/>
+  <path d="M210 284c10-112 74-184 150-184s140 72 150 184c-45-28-94-41-150-41s-105 13-150 41Z" fill="#f9f8f4"/>
+  <path d="M166 284c42-58 106-88 194-88s152 30 194 88v54c-52-34-116-51-194-51s-142 17-194 51v-54Z" fill="#f4f1e9"/>
+  <path d="M166 332c52-38 117-57 194-57s142 19 194 57v45c-55-29-120-44-194-44s-139 15-194 44v-45Z" fill="#1a1714"/>
+  <path d="M304 478c17 13 36 20 56 20s39-7 56-20" fill="none" stroke="#8c5f47" stroke-width="12" stroke-linecap="round"/>
+  <circle cx="300" cy="396" r="9" fill="#221915"/>
+  <circle cx="420" cy="396" r="9" fill="#221915"/>
+  <path d="M300 352c-26-10-50-8-72 6" fill="none" stroke="#33241d" stroke-width="10" stroke-linecap="round"/>
+  <path d="M420 352c26-10 50-8 72 6" fill="none" stroke="#33241d" stroke-width="10" stroke-linecap="round"/>
+  <path d="M360 406c-12 30-12 50 0 60" fill="none" stroke="#bc8568" stroke-width="10" stroke-linecap="round"/>
+  <path d="M252 844h216l-33-222c-23 18-48 27-75 27s-52-9-75-27l-33 222Z" fill="#fffaf2"/>
+  <path d="M285 622c23 18 48 27 75 27s52-9 75-27" fill="none" stroke="#d9ccb8" stroke-width="12" stroke-linecap="round"/>
+</svg>

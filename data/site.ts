@@ -134,12 +134,15 @@ export const stats = [
 ];
 
 export const partners = [
-  "روشن",
-  "بوابة العقار",
-  "مكاتب تقييم معتمدة",
-  "مطورون محليون",
-  "شركات إدارة أصول",
-  "مستشارون ماليون",
+  { name: "ROSHN", field: "تطوير مجتمعات" },
+  { name: "Dar Al Arkan", field: "تطوير عقاري" },
+  { name: "Emaar", field: "مشاريع عالمية" },
+  { name: "JLL", field: "استشارات عقارية" },
+  { name: "CBRE", field: "إدارة أصول" },
+  { name: "Knight Frank", field: "تقييم واستشارات" },
+  { name: "Savills", field: "أسواق عالمية" },
+  { name: "Bayut", field: "منصات عقارية" },
+  { name: "Wasalt", field: "تقنية عقارية" },
 ];
 
 export const team = [

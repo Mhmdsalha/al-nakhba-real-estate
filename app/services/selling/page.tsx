@@ -17,7 +17,7 @@ export default function SellingPage() {
           title="بيع يليق بعقارك"
           description="نرتب عملية البيع من التقييم إلى الإغلاق، ونحافظ على قيمة العقار وهيبة عرضه."
           cta="اطلب تقييم العقار"
-          image={images.advisor}
+          image={images.sellingHero}
         />
         <ServiceDetails
           title="خطوات محسوبة"

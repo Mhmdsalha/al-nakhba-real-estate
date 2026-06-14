@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 900" role="img" aria-label="Saudi investment advisor portrait">
+  <defs>
+    <linearGradient id="bg3" x1="0" x2="1" y1="1" y2="0">
+      <stop offset="0" stop-color="#1a1714"/>
+      <stop offset=".48" stop-color="#3a3028"/>
+      <stop offset="1" stop-color="#e8e0d4"/>
+    </linearGradient>
+    <radialGradient id="glow3" cx="28%" cy="25%" r="65%">
+      <stop offset="0" stop-color="#c9a84c" stop-opacity=".32"/>
+      <stop offset="1" stop-color="#c9a84c" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="720" height="900" fill="url(#bg3)"/>
+  <rect width="720" height="900" fill="url(#glow3)"/>
+  <path d="M116 842c22-154 106-232 244-232s222 78 244 232H116Z" fill="#ede5d8"/>
+  <path d="M266 726c22 36 54 54 94 54s72-18 94-54l-34-114H300l-34 114Z" fill="#c99175"/>
+  <path d="M214 340c4-98 63-165 146-165s142 67 146 165l6 104c6 96-57 176-152 176s-158-80-152-176l6-104Z" fill="#d7aa8e"/>
+  <path d="M184 302c34-86 93-132 176-132s142 46 176 132v74c-44-34-102-51-176-51s-132 17-176 51v-74Z" fill="#11100d"/>
+  <path d="M220 276c34-50 81-75 140-75s106 25 140 75c-42-10-88-15-140-15s-98 5-140 15Z" fill="#f8f5ef"/>
+  <path d="M184 362c48-34 107-51 176-51s128 17 176 51v42c-54-25-113-38-176-38s-122 13-176 38v-42Z" fill="#14110e"/>
+  <path d="M300 492c18 15 38 23 60 23s42-8 60-23" fill="none" stroke="#7e5342" stroke-width="12" stroke-linecap="round"/>
+  <circle cx="304" cy="414" r="9" fill="#17120e"/>
+  <circle cx="416" cy="414" r="9" fill="#17120e"/>
+  <path d="M280 372c-24-9-47-8-68 5" fill="none" stroke="#2a1f19" stroke-width="10" stroke-linecap="round"/>
+  <path d="M440 372c24-9 47-8 68 5" fill="none" stroke="#2a1f19" stroke-width="10" stroke-linecap="round"/>
+  <path d="M266 842h188l-35-196c-19 15-39 22-59 22s-40-7-59-22l-35 196Z" fill="#f9f4ec"/>
+  <path d="M220 842h280l-44-146-96 108-96-108-44 146Z" fill="#e8e0d4"/>
+  <path d="M360 804l-96-108" fill="none" stroke="#c9a84c" stroke-width="7" stroke-linecap="round"/>
+</svg>

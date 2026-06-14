@@ -15,12 +15,16 @@ export const images = {
     "https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=1800&q=88",
   meeting:
     "https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=1800&q=88",
-  portrait1:
-    "https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=900&q=88",
-  portrait2:
-    "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=900&q=88",
-  portrait3:
-    "https://images.unsplash.com/photo-1568602471122-7832951cc4c5?auto=format&fit=crop&w=900&q=88",
-  portrait4:
-    "https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=900&q=88",
+  serviceDesk:
+    "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1800&q=88",
+  sellingHero:
+    "https://images.unsplash.com/photo-1600566753151-384129cf4e3e?auto=format&fit=crop&w=2000&q=88",
+  investmentHero:
+    "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=2000&q=88",
+  managementHero:
+    "https://images.unsplash.com/photo-1600566752355-35792bedcfea?auto=format&fit=crop&w=2000&q=88",
+  portrait1: "/images/team/saudi-executive.svg",
+  portrait2: "/images/team/saudi-sales-director.svg",
+  portrait3: "/images/team/saudi-investment-advisor.svg",
+  portrait4: "/images/team/saudi-asset-manager.svg",
 };

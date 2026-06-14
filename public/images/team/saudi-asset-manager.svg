@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 900" role="img" aria-label="Saudi property asset manager portrait">
+  <defs>
+    <linearGradient id="bg4" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#f0ebe1"/>
+      <stop offset=".55" stop-color="#241d17"/>
+      <stop offset="1" stop-color="#11100d"/>
+    </linearGradient>
+    <radialGradient id="glow4" cx="70%" cy="22%" r="58%">
+      <stop offset="0" stop-color="#c9a84c" stop-opacity=".34"/>
+      <stop offset="1" stop-color="#c9a84c" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="720" height="900" fill="url(#bg4)"/>
+  <rect width="720" height="900" fill="url(#glow4)"/>
+  <path d="M112 844c34-166 116-250 248-250s214 84 248 250H112Z" fill="#11100d"/>
+  <path d="M264 728c22 39 54 58 96 58s74-19 96-58l-32-124H296l-32 124Z" fill="#c88f76"/>
+  <path d="M218 350c8-98 65-164 142-164s134 66 142 164l8 96c8 94-56 174-150 174s-158-80-150-174l8-96Z" fill="#d9a88e"/>
+  <path d="M174 322c52-108 114-162 186-162s134 54 186 162c-36 48-98 72-186 72s-150-24-186-72Z" fill="#201712"/>
+  <path d="M192 292c44-72 100-108 168-108s124 36 168 108c-44-24-100-36-168-36s-124 12-168 36Z" fill="#f5f1e8"/>
+  <path d="M188 352c50-30 107-45 172-45s122 15 172 45v42c-48-22-106-33-172-33s-124 11-172 33v-42Z" fill="#17130f"/>
+  <path d="M304 494c17 14 36 21 56 21s39-7 56-21" fill="none" stroke="#7f5140" stroke-width="12" stroke-linecap="round"/>
+  <circle cx="306" cy="420" r="9" fill="#17120e"/>
+  <circle cx="414" cy="420" r="9" fill="#17120e"/>
+  <path d="M284 378c-26-9-49-7-70 6" fill="none" stroke="#2b201a" stroke-width="10" stroke-linecap="round"/>
+  <path d="M436 378c26-9 49-7 70 6" fill="none" stroke="#2b201a" stroke-width="10" stroke-linecap="round"/>
+  <path d="M248 844h224l-46-178-66 104-66-104-46 178Z" fill="#15110d"/>
+  <path d="M290 844h140l-20-188c-17 12-34 18-50 18s-33-6-50-18l-20 188Z" fill="#f3eee6"/>
+</svg>

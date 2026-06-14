@@ -17,7 +17,7 @@ export default function InvestmentPage() {
           title="استثمار برؤية واضحة"
           description="فرص عقارية منتقاة بعائد مفهوم وموقع مدروس ومتابعة بعد التملك."
           cta="احجز استشارة"
-          image={images.meeting}
+          image={images.investmentHero}
         />
         <ServiceDetails
           title="قراءة قبل القرار"

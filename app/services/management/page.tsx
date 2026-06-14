@@ -17,7 +17,7 @@ export default function ManagementPage() {
           title="إدارة تحفظ القيمة"
           description="تشغيل ومتابعة وتقارير دورية تساعد المالك على رؤية الأصل بوضوح."
           cta="ناقش محفظتك"
-          image={images.interior}
+          image={images.managementHero}
         />
         <ServiceDetails
           title="تشغيل منظم"
