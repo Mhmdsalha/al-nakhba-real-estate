@@ -39,8 +39,8 @@ export const images = {
     "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=1800&q=88",
   projectEstate:
     "https://images.unsplash.com/photo-1448630360428-65456885c650?auto=format&fit=crop&w=1800&q=88",
-  portrait1: "/images/team/saudi-executive.svg",
-  portrait2: "/images/team/saudi-sales-director.svg",
-  portrait3: "/images/team/saudi-investment-advisor.svg",
-  portrait4: "/images/team/saudi-asset-manager.svg",
+  portrait1: "/images/team/abdulaziz-nasser.jpg",
+  portrait2: "/images/team/noura-khaled.jpg",
+  portrait3: "/images/team/faisal-rashid.jpg",
+  portrait4: "/images/team/lina-omari.jpg",
 };

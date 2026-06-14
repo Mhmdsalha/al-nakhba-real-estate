@@ -1421,79 +1421,331 @@ img {
   border-color: var(--color-gold);
 }
 
-.about-story {
+.about-hero-section {
+  position: relative;
+  padding-block: clamp(118px, 12vw, 172px) clamp(62px, 8vw, 104px);
+  overflow: hidden;
+  background:
+    linear-gradient(135deg, rgba(212, 175, 106, 0.13), transparent 36%),
+    repeating-linear-gradient(135deg, rgba(212, 175, 106, 0.06) 0 1px, transparent 1px 58px);
+}
+
+.about-hero-section::before {
+  position: absolute;
+  inset: 12% auto auto -11%;
+  width: 34vw;
+  min-width: 320px;
+  aspect-ratio: 1;
+  border: 1px solid rgba(212, 175, 106, 0.12);
+  border-radius: 999px;
+  content: "";
+}
+
+.about-hero {
+  position: relative;
+  z-index: 1;
   display: grid;
-  grid-template-columns: 0.9fr 1.1fr;
-  gap: 32px;
+  grid-template-columns: minmax(0, 0.86fr) minmax(0, 1.14fr);
+  gap: clamp(28px, 5vw, 72px);
   align-items: center;
 }
 
-.quote-card {
-  padding: clamp(28px, 5vw, 64px);
-  border-radius: 34px;
+.about-hero-copy {
+  display: grid;
+  max-width: 620px;
+  gap: 20px;
 }
 
-.quote-card blockquote {
+.about-hero-copy h1 {
   margin: 0;
-  font-size: clamp(1.35rem, 3.2vw, 2.85rem);
+  max-width: 10ch;
+  color: var(--color-travertine);
+  font-size: clamp(2.55rem, 6.2vw, 6.2rem);
+  font-weight: 900;
+  line-height: 0.98;
+}
+
+.about-hero-copy p:not(.eyebrow) {
+  max-width: 52ch;
+  margin: 0;
+  color: rgba(245, 241, 232, 0.7);
+  font-size: clamp(1rem, 1.45vw, 1.2rem);
+  line-height: 1.95;
+}
+
+.about-hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px 18px;
+  align-items: center;
+  padding-block-start: 8px;
+}
+
+.about-hero-actions a {
+  display: inline-flex;
+  min-height: 48px;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 24px;
+  border-radius: 999px;
+  background: var(--color-gold);
+  color: var(--color-obsidian);
   font-weight: 800;
-  line-height: 1.35;
+}
+
+.about-hero-actions span {
+  color: rgba(245, 241, 232, 0.54);
+  font-size: 0.92rem;
+}
+
+.about-hero-board {
+  position: relative;
+  min-height: 640px;
+}
+
+.about-hero-image {
+  position: absolute;
+  overflow: hidden;
+  border: 1px solid rgba(212, 175, 106, 0.2);
+  background: var(--color-bronze);
+}
+
+.about-hero-image img {
+  object-fit: cover;
+}
+
+.about-hero-main-image {
+  inset: 0 7% 76px 0;
+  border-radius: 42px;
+}
+
+.about-hero-small-image {
+  inset: auto auto 0 0;
+  width: 35%;
+  height: 42%;
+  border-radius: 30px;
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.38);
+}
+
+.about-hero-quote {
+  position: absolute;
+  inset: 9% auto auto 0;
+  z-index: 2;
+  display: grid;
+  width: min(320px, 42%);
+  gap: 12px;
+  padding: 24px;
+  border-radius: 26px;
+  background: rgba(245, 241, 232, 0.76);
+  color: var(--color-obsidian);
+  box-shadow: 0 26px 62px rgba(0, 0, 0, 0.25);
+}
+
+.about-hero-quote span {
+  color: #9a7736;
+  font-size: 0.82rem;
+  font-weight: 800;
+}
+
+.about-hero-quote strong {
+  font-size: clamp(1.08rem, 1.6vw, 1.55rem);
+  line-height: 1.45;
+}
+
+.about-hero-metrics {
+  position: absolute;
+  inset: auto 0 0 auto;
+  z-index: 2;
+  display: grid;
+  width: min(420px, 58%);
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  overflow: hidden;
+  border: 1px solid rgba(212, 175, 106, 0.26);
+  border-radius: 28px;
+  background: rgba(15, 13, 11, 0.74);
+  backdrop-filter: blur(18px) saturate(140%);
+  -webkit-backdrop-filter: blur(18px) saturate(140%);
+}
+
+.about-hero-metrics div {
+  display: grid;
+  gap: 2px;
+  padding: 22px;
+}
+
+.about-hero-metrics div + div {
+  border-inline-start: 1px solid rgba(212, 175, 106, 0.18);
+}
+
+.about-hero-metrics strong {
+  color: var(--color-gold);
+  font-size: clamp(2rem, 3.4vw, 3.4rem);
+  line-height: 1;
+}
+
+.about-hero-metrics span {
+  color: rgba(245, 241, 232, 0.7);
+  font-size: 0.92rem;
+}
+
+.journey-section {
+  background:
+    linear-gradient(180deg, rgba(245, 241, 232, 0.03), rgba(212, 175, 106, 0.05)),
+    var(--color-obsidian);
+}
+
+.journey-track {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 14px;
+  padding-block-start: 34px;
+}
+
+.journey-track::before {
+  position: absolute;
+  inset: 57px 7% auto 7%;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(212, 175, 106, 0.58), transparent);
+  content: "";
+}
+
+.journey-card {
+  position: relative;
+  display: grid;
+  gap: 12px;
+  min-height: 260px;
+  padding: 22px;
+  border-radius: 26px;
+  background: rgba(245, 241, 232, 0.08);
+}
+
+.journey-card::before {
+  position: absolute;
+  inset-block-start: -8px;
+  inset-inline-start: 24px;
+  width: 16px;
+  height: 16px;
+  border: 3px solid var(--color-obsidian);
+  border-radius: 999px;
+  background: var(--color-gold);
+  content: "";
+}
+
+.journey-index {
+  justify-self: end;
+  color: rgba(245, 241, 232, 0.22);
+  font-size: 1.35rem;
+  font-weight: 900;
+}
+
+.journey-card strong {
+  color: var(--color-gold);
+  font-size: clamp(1.7rem, 2.6vw, 2.7rem);
+  line-height: 1;
+}
+
+.journey-card h3 {
+  margin: 0;
+  color: var(--color-travertine);
+  font-size: 1.3rem;
+}
+
+.journey-card p {
+  margin: 0;
+  color: rgba(245, 241, 232, 0.68);
+  line-height: 1.8;
+}
+
+.about-team-section {
+  background: linear-gradient(180deg, transparent, rgba(232, 224, 212, 0.05));
 }
 
 .team-grid {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: 20px;
+  gap: 18px;
 }
 
 .team-card,
-.testimonial-card,
 .branch-card {
   padding: 18px;
   border-radius: 26px;
 }
 
+.team-card {
+  overflow: hidden;
+  background: rgba(245, 241, 232, 0.07);
+}
+
 .portrait {
   position: relative;
-  min-height: 240px;
+  min-height: 320px;
   overflow: hidden;
   border-radius: 20px;
   margin-block-end: 16px;
+}
+
+.portrait img {
+  object-fit: cover;
 }
 
 .saudi-portrait {
   background: linear-gradient(135deg, rgba(212, 175, 106, 0.18), rgba(26, 23, 20, 0.92));
 }
 
+.team-card-body {
+  display: grid;
+  gap: 7px;
+}
+
+.team-card h3 {
+  margin: 0;
+  color: var(--color-travertine);
+  font-size: 1.35rem;
+}
+
+.team-card p {
+  margin: 0;
+  color: rgba(245, 241, 232, 0.6);
+}
+
 .testimonials-section {
-  background: linear-gradient(180deg, rgba(240, 235, 225, 0), rgba(232, 224, 212, 0.62));
+  background:
+    radial-gradient(circle at 12% 0%, rgba(212, 175, 106, 0.12), transparent 28rem),
+    linear-gradient(180deg, rgba(240, 235, 225, 0), rgba(232, 224, 212, 0.09));
 }
 
 .testimonials-layout {
   display: grid;
-  grid-template-columns: minmax(0, 1.05fr) minmax(0, 0.95fr);
-  gap: 22px;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.05fr);
+  gap: 18px;
   align-items: stretch;
 }
 
-.testimonial-feature {
+.testimonial-feature,
+.testimonial-card {
   position: relative;
   display: grid;
   align-content: space-between;
-  min-height: 340px;
-  padding: clamp(28px, 5vw, 54px);
   overflow: hidden;
   border-radius: 30px;
 }
 
-.testimonial-feature::after {
+.testimonial-feature {
+  min-height: 380px;
+  padding: clamp(28px, 5vw, 54px);
+}
+
+.testimonial-feature::after,
+.testimonial-card::after {
   position: absolute;
-  inset: auto auto -80px -70px;
+  inset: auto auto -86px -76px;
   width: 220px;
   height: 220px;
   border-radius: 999px;
-  background: rgba(212, 175, 106, 0.2);
-  filter: blur(48px);
+  background: rgba(212, 175, 106, 0.18);
+  filter: blur(50px);
   content: "";
 }
 
@@ -1517,32 +1769,63 @@ img {
 
 .testimonial-feature footer,
 .testimonial-card footer {
+  position: relative;
+  z-index: 1;
   display: grid;
-  gap: 3px;
-  color: rgba(245, 241, 232, 0.84);
+  gap: 6px;
 }
 
-.testimonial-feature footer span,
-.testimonial-card footer span {
-  color: rgba(245, 241, 232, 0.5);
-  font-size: 0.78rem;
+.testimonial-feature footer strong,
+.testimonial-card footer strong {
+  font-size: 1.08rem;
+  font-weight: 800;
+}
+
+.testimonial-city {
+  width: fit-content;
+  padding: 5px 12px;
+  border: 1px solid currentColor;
+  border-radius: 999px;
+  font-size: 0.76rem;
+  opacity: 0.72;
 }
 
 .testimonial-stack {
   display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 14px;
 }
 
 .testimonial-card {
-  display: grid;
-  gap: 18px;
-  min-height: 160px;
+  min-height: 230px;
+  padding: 24px;
 }
 
 .testimonial-card p {
+  position: relative;
+  z-index: 1;
   margin: 0;
-  color: rgba(245, 241, 232, 0.78);
   line-height: 1.75;
+}
+
+.testimonial-tone-dark {
+  background: rgba(18, 15, 12, 0.9);
+  color: var(--color-travertine);
+}
+
+.testimonial-tone-stone {
+  background: rgba(232, 224, 212, 0.88);
+  color: var(--color-obsidian);
+}
+
+.testimonial-tone-light {
+  background: rgba(245, 241, 232, 0.7);
+  color: var(--color-obsidian);
+}
+
+.testimonial-tone-brass {
+  background: rgba(212, 175, 106, 0.82);
+  color: var(--color-obsidian);
 }
 
 .branches-layout {
@@ -1688,12 +1971,60 @@ img {
   .selling-hero,
   .selling-process-layout,
   .services-desk,
-  .about-story,
+  .about-hero,
   .team-grid,
   .testimonials-layout,
   .branches-layout,
   .footer-grid {
     grid-template-columns: 1fr;
+  }
+
+  .about-hero-section {
+    padding-block-start: 104px;
+  }
+
+  .about-hero-copy h1 {
+    max-width: 12ch;
+  }
+
+  .about-hero-board {
+    min-height: 560px;
+    order: -1;
+  }
+
+  .about-hero-main-image {
+    inset: 0 0 86px 0;
+  }
+
+  .about-hero-quote {
+    inset: 18px auto auto 18px;
+    width: min(300px, 54%);
+  }
+
+  .about-hero-metrics {
+    width: min(440px, 68%);
+  }
+
+  .journey-track {
+    grid-template-columns: 1fr;
+  }
+
+  .journey-track::before {
+    inset: 42px 31px 42px auto;
+    width: 1px;
+    height: auto;
+    background: linear-gradient(180deg, transparent, rgba(212, 175, 106, 0.55), transparent);
+  }
+
+  .journey-card {
+    min-height: auto;
+    padding-inline-start: 42px;
+  }
+
+  .journey-card::before {
+    inset-block-start: 28px;
+    inset-inline-start: auto;
+    inset-inline-end: 24px;
   }
 
   .services-desk-media {
@@ -1884,6 +2215,77 @@ img {
 
   .selling-project-card {
     min-height: 420px;
+  }
+
+  .about-hero-section {
+    padding-block: 92px 54px;
+  }
+
+  .about-hero {
+    gap: 26px;
+  }
+
+  .about-hero-copy h1 {
+    font-size: clamp(2.4rem, 13vw, 4.1rem);
+  }
+
+  .about-hero-copy p:not(.eyebrow) {
+    line-height: 1.85;
+  }
+
+  .about-hero-board {
+    min-height: 500px;
+  }
+
+  .about-hero-main-image {
+    inset: 0 0 118px 0;
+    border-radius: 28px;
+  }
+
+  .about-hero-small-image {
+    display: none;
+  }
+
+  .about-hero-quote {
+    inset: auto 14px 88px 14px;
+    width: auto;
+    padding: 18px;
+    border-radius: 20px;
+  }
+
+  .about-hero-metrics {
+    inset: auto 0 0 0;
+    width: 100%;
+    border-radius: 22px;
+  }
+
+  .about-hero-metrics div {
+    padding: 16px;
+  }
+
+  .journey-track {
+    padding-block-start: 18px;
+  }
+
+  .journey-track::before {
+    inset-inline-end: 23px;
+  }
+
+  .journey-card {
+    padding: 20px 42px 20px 18px;
+    border-radius: 22px;
+  }
+
+  .portrait {
+    min-height: 360px;
+  }
+
+  .testimonial-stack {
+    grid-template-columns: 1fr;
+  }
+
+  .testimonial-feature {
+    min-height: 320px;
   }
 
   .map-panel {

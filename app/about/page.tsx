@@ -1,12 +1,13 @@
-import { Achievements, CompanyStory, TeamGrid, Testimonials } from "@/components/about/AboutSections";
+import { AboutHero, Achievements, Journey, TeamGrid, Testimonials } from "@/components/about/AboutSections";
 import { SiteLayout } from "@/components/layout/SiteLayout";
 
 export default function AboutPage() {
   return (
     <SiteLayout>
       <main>
-        <CompanyStory />
+        <AboutHero />
         <Achievements />
+        <Journey />
         <TeamGrid />
         <Testimonials />
       </main>
