@@ -1,6 +1,6 @@
 "use client";
 
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { ArrowDownLeft, ChevronLeft, ChevronRight } from "lucide-react";
@@ -25,9 +25,20 @@ export function SellingProjectsCarousel({ projects }: SellingProjectsCarouselPro
   const reduced = useReducedMotion();
   const groups = useMemo(() => chunkProjects(projects), [projects]);
   const [active, setActive] = useState(0);
+  const [paused, setPaused] = useState(false);
 
   const next = () => setActive((current) => (current + 1) % groups.length);
   const previous = () => setActive((current) => (current - 1 + groups.length) % groups.length);
+
+  useEffect(() => {
+    if (reduced || paused || groups.length < 2) return;
+
+    const timer = window.setInterval(() => {
+      setActive((current) => (current + 1) % groups.length);
+    }, 5200);
+
+    return () => window.clearInterval(timer);
+  }, [groups.length, paused, reduced]);
 
   return (
     <section className="section selling-projects-section" id="selling-projects">
@@ -51,7 +62,11 @@ export function SellingProjectsCarousel({ projects }: SellingProjectsCarouselPro
           </div>
         </div>
 
-        <div className="selling-carousel-window">
+        <div
+          className="selling-carousel-window"
+          onMouseEnter={() => setPaused(true)}
+          onMouseLeave={() => setPaused(false)}
+        >
           <motion.div
             animate={{ x: `-${active * 100}%` }}
             className="selling-carousel-track"

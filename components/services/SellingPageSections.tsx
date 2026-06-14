@@ -56,7 +56,7 @@ export function SellingHero() {
           </div>
           <div className="selling-hero-gallery" aria-label="عرض عقاري فاخر">
             <div className="selling-main-photo">
-              <Image src={images.villa} alt="فيلا سعودية فاخرة جاهزة للبيع" fill priority sizes="(max-width: 980px) 100vw, 56vw" />
+              <Image src={images.sellingHeroMain} alt="فيلا سعودية فاخرة جاهزة للبيع" fill priority sizes="(max-width: 980px) 100vw, 56vw" />
             </div>
             <GlassCard className="selling-market-card">
               <span>نطاق البيع المتوقع</span>
@@ -64,7 +64,7 @@ export function SellingHero() {
               <small>بعد التقييم والمعاينة</small>
             </GlassCard>
             <div className="selling-side-photo">
-              <Image src={images.majlis} alt="تفاصيل داخلية فاخرة لعقار معروض" fill sizes="(max-width: 980px) 42vw, 18vw" />
+              <Image src={images.sellingHeroDetail} alt="تفاصيل داخلية فاخرة لعقار معروض" fill sizes="(max-width: 980px) 42vw, 18vw" />
             </div>
             <GlassCard className="selling-hero-note">
               <FileCheck2 size={18} />
