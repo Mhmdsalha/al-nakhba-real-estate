@@ -854,6 +854,409 @@ img {
   padding-block-start: 104px;
 }
 
+.selling-hero-section {
+  padding-block: 104px 40px;
+}
+
+.selling-hero {
+  position: relative;
+  display: grid;
+  grid-template-columns: minmax(0, 0.82fr) minmax(0, 1.18fr);
+  gap: clamp(18px, 3vw, 34px);
+  min-height: 680px;
+  overflow: hidden;
+  border-radius: 42px;
+  padding: clamp(20px, 3vw, 34px);
+  background:
+    radial-gradient(circle at 30% 18%, rgba(212, 175, 106, 0.18), transparent 24rem),
+    linear-gradient(135deg, rgba(245, 241, 232, 0.08), rgba(15, 13, 11, 0.94));
+}
+
+.selling-hero::before {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background-image:
+    linear-gradient(45deg, transparent 44%, rgba(212, 175, 106, 0.22) 45%, rgba(212, 175, 106, 0.22) 46%, transparent 47%),
+    linear-gradient(-45deg, transparent 44%, rgba(245, 241, 232, 0.1) 45%, rgba(245, 241, 232, 0.1) 46%, transparent 47%);
+  background-size: 86px 86px;
+  mask-image: linear-gradient(90deg, transparent, #000 26%, transparent 76%);
+  opacity: 0.2;
+  content: "";
+}
+
+.selling-hero-copy {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  align-content: center;
+  gap: 18px;
+  padding: clamp(18px, 4vw, 58px);
+}
+
+.selling-hero-copy .display-title {
+  max-width: 8ch;
+}
+
+.selling-hero-copy p:not(.eyebrow) {
+  max-width: 58ch;
+  margin: 0;
+  color: rgba(245, 241, 232, 0.76);
+  font-size: 1rem;
+  line-height: 2;
+}
+
+.selling-hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-block-start: 8px;
+}
+
+.selling-hero-gallery {
+  position: relative;
+  min-height: 610px;
+}
+
+.selling-main-photo,
+.selling-side-photo {
+  position: absolute;
+  overflow: hidden;
+  border: 1px solid rgba(212, 175, 106, 0.22);
+  box-shadow: 0 26px 70px rgba(0, 0, 0, 0.34);
+}
+
+.selling-main-photo {
+  inset: 0 0 72px 12%;
+  border-radius: 32px;
+}
+
+.selling-side-photo {
+  inset: auto 62% 0 0;
+  height: 44%;
+  border-radius: 26px;
+}
+
+.selling-main-photo img,
+.selling-side-photo img,
+.selling-project-card img {
+  object-fit: cover;
+}
+
+.selling-market-card,
+.selling-hero-note {
+  position: absolute;
+  z-index: 2;
+  display: grid;
+  gap: 6px;
+  border-radius: 20px;
+}
+
+.selling-market-card {
+  inset: 28px auto auto 24px;
+  min-width: 260px;
+  padding: 18px;
+}
+
+.selling-market-card span,
+.selling-market-card small {
+  color: rgba(26, 23, 20, 0.64);
+  font-size: 0.78rem;
+}
+
+.selling-market-card strong {
+  color: var(--color-obsidian);
+  font-size: 1.2rem;
+}
+
+.selling-hero-note {
+  inset: auto 24px 22px auto;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  max-width: 250px;
+  padding: 15px;
+  color: var(--color-obsidian);
+  font-weight: 800;
+}
+
+.selling-hero-note svg {
+  color: var(--color-gold);
+}
+
+.featured-sales-section {
+  background:
+    linear-gradient(180deg, rgba(15, 13, 11, 0), rgba(30, 26, 22, 0.6), rgba(15, 13, 11, 0));
+}
+
+.sales-highlight-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.sales-highlight-card {
+  display: grid;
+  gap: 10px;
+  min-height: 176px;
+  padding: 22px;
+  border-radius: 26px;
+}
+
+.sales-highlight-card svg {
+  color: var(--color-gold);
+}
+
+.sales-highlight-card strong {
+  color: var(--color-travertine);
+  font-size: clamp(1.45rem, 2.4vw, 2.2rem);
+}
+
+.sales-highlight-card span {
+  color: rgba(245, 241, 232, 0.68);
+  line-height: 1.65;
+}
+
+.selling-process-section {
+  background:
+    radial-gradient(circle at 18% 30%, rgba(212, 175, 106, 0.14), transparent 24rem),
+    var(--color-obsidian);
+}
+
+.selling-process-layout {
+  display: grid;
+  grid-template-columns: 0.78fr 1.22fr;
+  gap: clamp(22px, 4vw, 54px);
+  align-items: start;
+}
+
+.selling-process-intro {
+  position: sticky;
+  top: 116px;
+  display: grid;
+  gap: 20px;
+}
+
+.process-assurance-card {
+  position: relative;
+  display: grid;
+  gap: 12px;
+  overflow: hidden;
+  padding: 24px;
+  border-radius: 28px;
+  color: var(--color-obsidian);
+}
+
+.process-assurance-card strong {
+  font-size: 1.25rem;
+  line-height: 1.55;
+}
+
+.process-assurance-card p {
+  margin: 0;
+  color: rgba(26, 23, 20, 0.66);
+  line-height: 1.8;
+}
+
+.process-assurance-card svg {
+  color: var(--color-gold);
+}
+
+.selling-process-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.selling-step-card {
+  position: relative;
+  display: grid;
+  align-content: start;
+  min-height: 240px;
+  gap: 12px;
+  overflow: hidden;
+  padding: clamp(20px, 3vw, 30px);
+  border-radius: 28px;
+}
+
+.selling-step-card::before {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background:
+    linear-gradient(135deg, rgba(212, 175, 106, 0.16), transparent 36%),
+    repeating-linear-gradient(135deg, transparent 0 16px, rgba(245, 241, 232, 0.04) 16px 17px);
+  content: "";
+}
+
+.selling-step-card > * {
+  position: relative;
+  z-index: 1;
+}
+
+.selling-step-card span {
+  color: var(--color-gold);
+  font-size: 0.88rem;
+  font-weight: 900;
+}
+
+.selling-step-card h3 {
+  margin: 0;
+  color: var(--color-travertine);
+  font-size: 1.35rem;
+}
+
+.selling-step-card p {
+  margin: 0;
+  color: rgba(245, 241, 232, 0.68);
+  line-height: 1.85;
+}
+
+.selling-projects-section {
+  overflow: hidden;
+}
+
+.selling-projects-head {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 20px;
+  align-items: start;
+}
+
+.selling-carousel-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+  justify-content: flex-end;
+  padding-block-start: 28px;
+}
+
+.icon-button {
+  display: inline-grid;
+  width: 44px;
+  height: 44px;
+  place-items: center;
+  border: 1px solid rgba(212, 175, 106, 0.34);
+  border-radius: 999px;
+  background: rgba(245, 241, 232, 0.06);
+  color: var(--color-travertine);
+  cursor: pointer;
+  transition: transform 220ms ease, border-color 220ms ease, background 220ms ease;
+}
+
+.icon-button:hover {
+  transform: translateY(-2px);
+  border-color: rgba(212, 175, 106, 0.62);
+  background: rgba(212, 175, 106, 0.14);
+}
+
+.selling-carousel-window {
+  direction: ltr;
+  overflow: hidden;
+  border-radius: 30px;
+}
+
+.selling-carousel-track {
+  display: flex;
+  will-change: transform;
+}
+
+.selling-project-group {
+  direction: rtl;
+  display: grid;
+  flex: 0 0 100%;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.selling-project-card {
+  position: relative;
+  min-height: 390px;
+  overflow: hidden;
+  border: 1px solid rgba(212, 175, 106, 0.2);
+  border-radius: 28px;
+  background: var(--color-bronze);
+}
+
+.selling-project-card::after {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, transparent 36%, rgba(9, 8, 6, 0.84));
+  content: "";
+}
+
+.selling-project-overlay {
+  position: absolute;
+  inset: auto 12px 12px;
+  z-index: 1;
+  display: grid;
+  gap: 16px;
+  padding: 15px;
+  border: 1px solid rgba(212, 175, 106, 0.35);
+  border-radius: 20px;
+  background:
+    linear-gradient(180deg, rgba(20, 17, 13, 0.46), rgba(20, 17, 13, 0.74)),
+    rgba(245, 241, 232, 0.08);
+  box-shadow: 0 18px 38px rgba(0, 0, 0, 0.32);
+  backdrop-filter: blur(18px) saturate(155%);
+  -webkit-backdrop-filter: blur(18px) saturate(155%);
+}
+
+.selling-project-overlay h3 {
+  margin: 10px 0 3px;
+  color: var(--color-travertine);
+  font-size: 1.08rem;
+}
+
+.selling-project-overlay p {
+  margin: 0;
+  color: rgba(245, 241, 232, 0.68);
+  font-size: 0.82rem;
+}
+
+.selling-project-meta {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.selling-project-meta strong {
+  color: rgba(245, 241, 232, 0.92);
+  font-size: 0.86rem;
+}
+
+.selling-project-meta a {
+  display: inline-flex;
+  gap: 5px;
+  align-items: center;
+  color: var(--color-gold);
+  font-size: 0.78rem;
+  font-weight: 800;
+}
+
+.carousel-dots {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  margin-block-start: 22px;
+}
+
+.carousel-dots button {
+  width: 26px;
+  height: 7px;
+  border: 0;
+  border-radius: 999px;
+  background: rgba(245, 241, 232, 0.18);
+  cursor: pointer;
+  transition: width 220ms ease, background 220ms ease;
+}
+
+.carousel-dots button.active {
+  width: 48px;
+  background: var(--color-gold);
+}
+
 .split-hero {
   display: grid;
   grid-template-columns: 0.95fr 1.05fr;
@@ -1216,9 +1619,12 @@ img {
 
   .grid-3,
   .grid-4,
+  .sales-highlight-grid,
   .project-grid,
   .content-grid,
   .split-hero,
+  .selling-hero,
+  .selling-process-layout,
   .services-desk,
   .about-story,
   .team-grid,
@@ -1230,6 +1636,45 @@ img {
 
   .services-desk-media {
     min-height: 460px;
+  }
+
+  .selling-hero-section {
+    padding-block-start: 96px;
+  }
+
+  .selling-hero {
+    min-height: auto;
+  }
+
+  .selling-hero-gallery {
+    min-height: 540px;
+    order: -1;
+  }
+
+  .selling-main-photo {
+    inset: 0 0 92px 0;
+  }
+
+  .selling-side-photo {
+    inset: auto 52% 0 0;
+    height: 38%;
+  }
+
+  .selling-process-intro {
+    position: static;
+  }
+
+  .selling-projects-head {
+    grid-template-columns: 1fr;
+  }
+
+  .selling-carousel-actions {
+    justify-content: flex-start;
+    padding-block-start: 0;
+  }
+
+  .selling-project-group {
+    grid-template-columns: 1fr;
   }
 
   .project-grid .project-card:first-child {
@@ -1285,6 +1730,20 @@ img {
     width: 100%;
   }
 
+  .selling-hero-actions,
+  .selling-carousel-actions {
+    align-items: stretch;
+  }
+
+  .selling-carousel-actions .button {
+    order: -1;
+  }
+
+  .icon-button {
+    flex: 1;
+    width: auto;
+  }
+
   .nav {
     inset-block-start: 12px;
   }
@@ -1316,6 +1775,53 @@ img {
 
   .service-card {
     min-height: auto;
+  }
+
+  .selling-hero {
+    border-radius: 28px;
+    padding: 14px;
+  }
+
+  .selling-hero-copy {
+    padding: 18px 6px 8px;
+  }
+
+  .selling-hero-copy .display-title {
+    max-width: 9ch;
+  }
+
+  .selling-hero-gallery {
+    min-height: 470px;
+  }
+
+  .selling-market-card {
+    inset: 16px 16px auto auto;
+    min-width: min(250px, calc(100% - 32px));
+  }
+
+  .selling-hero-note {
+    inset: auto 16px 16px 16px;
+    max-width: none;
+  }
+
+  .selling-side-photo {
+    display: none;
+  }
+
+  .sales-highlight-card {
+    min-height: 140px;
+  }
+
+  .selling-process-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .selling-step-card {
+    min-height: 210px;
+  }
+
+  .selling-project-card {
+    min-height: 420px;
   }
 
   .map-panel {

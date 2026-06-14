@@ -1,34 +1,65 @@
 import { SiteLayout } from "@/components/layout/SiteLayout";
 import { CTASection } from "@/components/shared/CTASection";
-import { ProjectsGrid } from "@/components/shared/ProjectsGrid";
 import { ContactForm } from "@/components/services/ContactForm";
-import { ServiceDetails } from "@/components/services/ServiceDetails";
-import { ServiceHero } from "@/components/services/ServiceHero";
-import { SectionHeading } from "@/components/ui/SectionHeading";
+import { FeaturedSales, SellingHero, SellingServiceDetails } from "@/components/services/SellingPageSections";
+import { SellingProjectsCarousel } from "@/components/services/SellingProjectsCarousel";
 import { sellingProjects } from "@/data/site";
 import { images } from "@/lib/images";
+
+const extendedSellingProjects = [
+  ...sellingProjects,
+  {
+    title: "بنتهاوس بإطلالة مفتوحة",
+    location: "الرياض، العقيق",
+    badge: "مميز",
+    price: "٤٫٢ مليون ر.س",
+    image: images.tower,
+  },
+  {
+    title: "فيلا عصرية بحوش خاص",
+    location: "جدة، الشاطئ",
+    badge: "جاهز",
+    price: "٥٫٨ مليون ر.س",
+    image: images.pool,
+  },
+  {
+    title: "تاون هاوس عائلي",
+    location: "الرياض، الياسمين",
+    badge: "عرض خاص",
+    price: "٢٫٧ مليون ر.س",
+    image: images.sellingHero,
+  },
+  {
+    title: "شقة فندقية مخدومة",
+    location: "جدة، الكورنيش",
+    badge: "عوائد",
+    price: "١٫٦ مليون ر.س",
+    image: images.majlis,
+  },
+  {
+    title: "فيلا حجرية زاوية",
+    location: "الرياض، حطين",
+    badge: "حصري",
+    price: "٧٫١ مليون ر.س",
+    image: images.villa,
+  },
+  {
+    title: "دور مستقل بتشطيب فاخر",
+    location: "الرياض، الملقا",
+    badge: "جديد",
+    price: "٣٫٤ مليون ر.س",
+    image: images.interior,
+  },
+];
 
 export default function SellingPage() {
   return (
     <SiteLayout>
       <main>
-        <ServiceHero
-          eyebrow="خدمة البيع"
-          title="بيع يليق بعقارك"
-          description="نرتب عملية البيع من التقييم إلى الإغلاق، ونحافظ على قيمة العقار وهيبة عرضه."
-          cta="اطلب تقييم العقار"
-          image={images.sellingHero}
-        />
-        <ServiceDetails
-          title="خطوات محسوبة"
-          details={["تقييم أولي مدروس.", "تصوير وتسويق احترافي.", "ترشيح المشترين الجادين.", "تفاوض وإغلاق منظم."]}
-        />
-        <section className="section">
-          <div className="container">
-            <SectionHeading eyebrow="مشاريع للبيع" title="عروض مختارة" />
-            <ProjectsGrid projects={sellingProjects} compact />
-          </div>
-        </section>
+        <SellingHero />
+        <FeaturedSales />
+        <SellingServiceDetails />
+        <SellingProjectsCarousel projects={extendedSellingProjects} />
         <ContactForm
           fields={["الاسم", "رقم الجوال", "نوع العقار", "المدينة", "الرسالة"]}
           submit="إرسال الطلب"
