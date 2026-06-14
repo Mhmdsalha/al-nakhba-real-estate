@@ -51,23 +51,26 @@ export function AboutHero() {
           </div>
         </div>
 
-        <div className="about-hero-board" aria-label="ملخص النخبة للعقارات">
-          <div className="about-hero-image about-hero-main-image">
+        <div className="about-hero-proof" aria-label="ملخص خبرة النخبة">
+          <span>الرياض</span>
+          <span>جدة</span>
+          <span>استشارات خاصة</span>
+        </div>
+
+        <div className="about-hero-board" aria-label="مشهد معماري يعبر عن النخبة للعقارات">
+          <div className="about-hero-panorama">
             <Image
-              src={images.projectBuilding}
-              alt="واجهة مبنى حديث في السعودية"
+              src={images.hero}
+              alt="واجهة معمارية فاخرة مضاءة"
               fill
               priority
-              sizes="(max-width: 980px) 100vw, 48vw"
+              sizes="100vw"
             />
           </div>
           <GlassCard className="about-hero-quote" variant="light">
             <span>قيمة القرار</span>
             <strong>نختار العقار كما يختار صاحبه خطوته.</strong>
           </GlassCard>
-          <div className="about-hero-image about-hero-small-image">
-            <Image src={images.interior} alt="تصميم داخلي فاخر" fill sizes="(max-width: 980px) 42vw, 17vw" />
-          </div>
           <div className="about-hero-metrics">
             <div>
               <strong>٢</strong>
@@ -78,6 +81,7 @@ export function AboutHero() {
               <span>عميل نخبة</span>
             </div>
           </div>
+          <div className="about-hero-stamp">من ٢٠١٢</div>
         </div>
       </div>
     </section>
