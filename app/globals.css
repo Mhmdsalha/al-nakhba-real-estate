@@ -552,6 +552,7 @@ img {
   display: grid;
   gap: 3px;
   padding: 9px 10px;
+  padding-bottom: 28px;
   padding-left: 52px;
   overflow: hidden;
   background:
@@ -626,11 +627,21 @@ img {
 }
 
 .project-cta {
+  position: absolute;
+  bottom: 8px;
+  left: 12px;
+  z-index: 2;
   width: fit-content;
   color: var(--color-gold);
   font-size: 0.7rem;
   font-weight: 800;
   border-block-end: 1px solid rgba(212, 175, 106, 0.44);
+}
+
+.project-strip > .project-cta {
+  position: absolute;
+  right: auto;
+  left: 12px;
 }
 
 .chip {
@@ -1359,15 +1370,24 @@ img {
   min-width: 0;
 }
 
+.selling-project-overlay > .selling-project-meta {
+  position: static;
+}
+
 .selling-project-meta strong {
   color: rgba(245, 241, 232, 0.92);
   font-size: 0.7rem;
 }
 
 .selling-project-meta a {
+  position: absolute;
+  bottom: 9px;
+  left: 14px;
+  z-index: 2;
   display: inline-flex;
   gap: 5px;
   align-items: center;
+  margin-right: auto;
   color: var(--color-gold);
   font-size: 0.66rem;
   font-weight: 800;
@@ -2961,6 +2981,7 @@ img {
     0 10px 0 rgba(77, 68, 58, 0.18);
   backdrop-filter: blur(18px) saturate(150%);
   -webkit-backdrop-filter: blur(18px) saturate(150%);
+  transform: translate(-50%, -112%);
 }
 
 .map-pin svg {
@@ -2977,13 +2998,13 @@ img {
 }
 
 .pin-riyadh {
-  inset-block-start: 28%;
-  inset-inline-start: 66%;
+  top: 49%;
+  left: 58%;
 }
 
 .pin-jeddah {
-  inset-block-start: 62%;
-  inset-inline-start: 20%;
+  top: 67%;
+  left: 25%;
 }
 
 .footer {
@@ -3531,12 +3552,12 @@ img {
   }
 
   .pin-riyadh {
-    inset-block-start: 8%;
-    inset-inline-start: 6%;
+    top: 50%;
+    left: 60%;
   }
 
   .pin-jeddah {
-    inset-block-start: 72%;
-    inset-inline-start: 54%;
+    top: 68%;
+    left: 25%;
   }
 }
