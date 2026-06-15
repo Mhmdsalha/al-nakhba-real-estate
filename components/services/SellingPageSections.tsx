@@ -66,6 +66,7 @@ export function SellingHero() {
               />
             </div>
             <GlassCard className="selling-market-card">
+              <Image className="floating-brand-symbol" src="/brand/al-nakhba-symbol.png" alt="" width={30} height={28} aria-hidden="true" />
               <span>نطاق البيع المتوقع</span>
               <strong>٦٫٥ - ٧٫٢ مليون ر.س</strong>
               <small>بعد التقييم والمعاينة</small>
@@ -80,6 +81,7 @@ export function SellingHero() {
               />
             </div>
             <GlassCard className="selling-hero-note">
+              <Image className="floating-brand-symbol" src="/brand/al-nakhba-symbol.png" alt="" width={28} height={26} aria-hidden="true" />
               <FileCheck2 size={18} />
               <span>ملف بيع متكامل قبل أول معاينة</span>
             </GlassCard>

@@ -86,6 +86,14 @@ export function ServiceProjectsCarousel({
                   <article className="selling-project-card" key={project.title}>
                     <Image src={project.image} alt={project.title} fill sizes="(max-width: 980px) 100vw, 33vw" unoptimized />
                     <div className="selling-project-overlay">
+                      <Image
+                        className="card-brand-symbol"
+                        src="/brand/al-nakhba-symbol.png"
+                        alt=""
+                        width={28}
+                        height={26}
+                        aria-hidden="true"
+                      />
                       <div>
                         <span className="chip">{project.badge}</span>
                         <h3>{project.title}</h3>

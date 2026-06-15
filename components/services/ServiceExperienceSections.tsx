@@ -87,6 +87,7 @@ export function ServiceShowcaseHero({
               <Image src={mainImage} alt={mainAlt} fill priority sizes="(max-width: 980px) 100vw, 56vw" unoptimized />
             </div>
             <GlassCard className="selling-market-card">
+              <Image className="floating-brand-symbol" src="/brand/al-nakhba-symbol.png" alt="" width={30} height={28} aria-hidden="true" />
               <span>{metricLabel}</span>
               <strong>{metricValue}</strong>
               <small>{metricHint}</small>
@@ -95,6 +96,7 @@ export function ServiceShowcaseHero({
               <Image src={detailImage} alt={detailAlt} fill sizes="(max-width: 980px) 42vw, 18vw" unoptimized />
             </div>
             <GlassCard className="selling-hero-note">
+              <Image className="floating-brand-symbol" src="/brand/al-nakhba-symbol.png" alt="" width={28} height={26} aria-hidden="true" />
               <FileCheck2 size={18} />
               <span>{note}</span>
             </GlassCard>

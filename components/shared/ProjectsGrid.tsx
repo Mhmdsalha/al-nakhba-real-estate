@@ -21,6 +21,14 @@ export function ProjectsGrid({ projects, compact }: ProjectsGridProps) {
         <article className="project-card card" key={project.title}>
           <Image src={project.image} alt={project.title} fill sizes="(max-width: 980px) 100vw, 50vw" />
           <div className="project-strip glass-dark">
+            <Image
+              className="card-brand-symbol"
+              src="/brand/al-nakhba-symbol.png"
+              alt=""
+              width={28}
+              height={26}
+              aria-hidden="true"
+            />
             <div className="project-strip-meta">
               <span className="chip">{project.badge}</span>
               <strong>{project.price}</strong>

@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 
 export function Footer() {
@@ -6,7 +7,9 @@ export function Footer() {
       <div className="container">
         <div className="footer-grid">
           <div>
-            <h3>النخبة للعقارات</h3>
+            <div className="footer-brand">
+              <Image src="/brand/al-nakhba-logo.png" alt="النخبة للعقارات" width={220} height={62} />
+            </div>
             <p className="muted">نختار العقار بعناية، ونحوّل الاهتمام إلى قرار واضح.</p>
           </div>
           <div>

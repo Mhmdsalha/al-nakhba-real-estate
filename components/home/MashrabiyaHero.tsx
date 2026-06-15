@@ -23,11 +23,13 @@ export function MashrabiyaHero() {
           </div>
         </div>
         <GlassCard className="hero-floating start">
+          <Image className="floating-brand-symbol" src="/brand/al-nakhba-symbol.png" alt="" width={32} height={30} aria-hidden="true" />
           <span className="eyebrow">متاح الآن</span>
           <strong>٤٥</strong>
           <span className="muted">مشروعاً وفرصة مختارة بين الرياض وجدة.</span>
         </GlassCard>
         <GlassCard className="hero-floating end">
+          <Image className="floating-brand-symbol" src="/brand/al-nakhba-symbol.png" alt="" width={32} height={30} aria-hidden="true" />
           <span className="eyebrow">استشارة خاصة</span>
           <strong>٢٤ ساعة</strong>
           <span className="muted">نراجع احتياجك ونرشح المسار الأنسب.</span>

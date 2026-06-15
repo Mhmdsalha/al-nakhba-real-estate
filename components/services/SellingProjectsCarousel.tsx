@@ -78,6 +78,14 @@ export function SellingProjectsCarousel({ projects }: SellingProjectsCarouselPro
                   <article className="selling-project-card" key={project.title}>
                     <Image src={project.image} alt={project.title} fill sizes="(max-width: 980px) 100vw, 33vw" />
                     <div className="selling-project-overlay">
+                      <Image
+                        className="card-brand-symbol"
+                        src="/brand/al-nakhba-symbol.png"
+                        alt=""
+                        width={36}
+                        height={34}
+                        aria-hidden="true"
+                      />
                       <div>
                         <span className="chip">{project.badge}</span>
                         <h3>{project.title}</h3>

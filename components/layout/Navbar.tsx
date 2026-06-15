@@ -1,6 +1,7 @@
 "use client";
 
 import { Menu, X } from "lucide-react";
+import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 import { navLinks } from "@/data/site";
@@ -14,8 +15,15 @@ export function Navbar() {
         <div className="container">
           <div className="nav-inner glass-dark">
             <Link className="brand" href="/" aria-label="النخبة للعقارات">
-              النخبة للعقارات
-              <span>استشارات وفرص عقارية مختارة</span>
+              <Image
+                className="brand-logo"
+                src="/brand/al-nakhba-logo.png"
+                alt="النخبة للعقارات"
+                width={178}
+                height={50}
+                priority
+              />
+              <span className="brand-tagline">استشارات وفرص عقارية مختارة</span>
             </Link>
             <nav className="nav-links" aria-label="التنقل الرئيسي">
               {navLinks.map((link) => (
@@ -45,8 +53,14 @@ export function Navbar() {
         <div className="mobile-panel glass-dark">
           <div className="mobile-menu-header">
             <Link className="brand" href="/" onClick={() => setOpen(false)}>
-              النخبة للعقارات
-              <span>واجهة عقارية فاخرة</span>
+              <Image
+                className="brand-logo"
+                src="/brand/al-nakhba-logo.png"
+                alt="النخبة للعقارات"
+                width={168}
+                height={47}
+              />
+              <span className="brand-tagline">واجهة عقارية فاخرة</span>
             </Link>
             <button className="mobile-toggle" type="button" aria-label="إغلاق القائمة" onClick={() => setOpen(false)}>
               <X size={22} />
