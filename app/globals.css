@@ -228,6 +228,18 @@ img {
   line-height: 1.75;
 }
 
+.hero-title-wordmark {
+  display: block;
+}
+
+.hero-title-wordmark span {
+  display: inline;
+}
+
+.hero-title-stretch {
+  letter-spacing: 0;
+}
+
 .hero-actions,
 .actions-row {
   display: flex;
@@ -273,6 +285,21 @@ img {
 .hero-floating strong {
   color: var(--color-gold);
   font-size: clamp(1.28rem, 2.1vw, 1.9rem);
+}
+
+@media (min-width: 981px) {
+  .hero-title-wordmark {
+    display: inline-flex;
+    flex-wrap: nowrap;
+    align-items: baseline;
+    justify-content: center;
+    gap: 0.45ch;
+    white-space: nowrap;
+  }
+
+  .hero-title-stretch {
+    letter-spacing: 0.08em;
+  }
 }
 
 .nav {
@@ -3410,12 +3437,22 @@ img {
     font-size: 0.96rem;
   }
 
+  .selling-market-card .floating-brand-symbol,
+  .selling-hero-note .floating-brand-symbol {
+    top: 12px;
+    right: auto;
+    left: 12px;
+    inset-block-start: auto;
+    inset-inline-start: auto;
+    transform: none;
+  }
+
   .selling-hero-note {
     right: 14px;
     bottom: 16px;
     left: auto;
     max-width: 162px;
-    padding: 12px 36px 12px 12px;
+    padding: 12px 12px 12px 36px;
     border-radius: 16px;
     font-size: 0.74rem;
   }

@@ -13,7 +13,11 @@ export function MashrabiyaHero() {
       <div className="hero-content">
         <div className="hero-copy">
           <span className="chip">الرياض وجدة</span>
-          <h1 className="display-title">عقارك يبدأ من النخبة</h1>
+          <h1 className="display-title hero-title-wordmark">
+            <span>عقارك يبدأ</span>
+            <span className="hero-title-stretch">مــــن</span>
+            <span>النخبة</span>
+          </h1>
           <p>فرص عقارية مختارة في الرياض وجدة، بخبرة تحفظ القرار والقيمة.</p>
           <div className="hero-actions">
             <ButtonLink href="/contact">تحدث مع مستشار</ButtonLink>
