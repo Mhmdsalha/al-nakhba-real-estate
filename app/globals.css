@@ -236,6 +236,10 @@ img {
   justify-content: center;
 }
 
+.hero-card-cluster {
+  display: contents;
+}
+
 .hero-floating {
   position: absolute;
   z-index: 4;
@@ -3285,13 +3289,32 @@ img {
   }
 
   .hero-content {
-    min-height: 760px;
+    min-height: 700px;
     padding: 104px 16px 22px;
+  }
+
+  .hero-card-cluster {
+    position: relative;
+    right: auto;
+    bottom: auto;
+    left: auto;
+    display: grid;
+    width: 100%;
+    margin-block-start: 18px;
+    grid-template-columns: minmax(116px, 132px) minmax(0, 1fr);
+    align-items: end;
+    gap: 12px;
   }
 
   .hero-copy {
     justify-items: stretch;
     text-align: start;
+    gap: 14px;
+  }
+
+  .hero-copy p {
+    font-size: 0.92rem;
+    line-height: 1.72;
   }
 
   .hero-actions,
@@ -3313,8 +3336,9 @@ img {
   }
 
   .icon-button {
-    flex: 1;
-    width: auto;
+    flex: 0 0 38px;
+    width: 38px;
+    height: 38px;
   }
 
   .nav {
@@ -3356,7 +3380,7 @@ img {
   }
 
   .selling-hero-copy {
-    padding: 18px 6px 8px;
+    padding: 16px 4px 6px;
   }
 
   .selling-hero-copy .display-title {
@@ -3364,21 +3388,84 @@ img {
   }
 
   .selling-hero-gallery {
-    min-height: 470px;
+    min-height: 510px;
   }
 
   .selling-market-card {
-    inset: 16px 16px auto auto;
-    min-width: min(250px, calc(100% - 32px));
+    top: 14px;
+    right: 14px;
+    left: auto;
+    min-width: 0;
+    max-width: min(182px, calc(100% - 28px));
+    padding: 12px 12px 12px 42px;
+    border-radius: 18px;
+  }
+
+  .selling-market-card span,
+  .selling-market-card small {
+    font-size: 0.68rem;
+  }
+
+  .selling-market-card strong {
+    font-size: 0.96rem;
   }
 
   .selling-hero-note {
-    inset: auto 16px 16px 16px;
-    max-width: none;
+    right: 14px;
+    bottom: 16px;
+    left: auto;
+    max-width: 162px;
+    padding: 12px 36px 12px 12px;
+    border-radius: 16px;
+    font-size: 0.74rem;
   }
 
   .selling-side-photo {
-    display: none;
+    display: block;
+    bottom: 78px;
+    left: 10px;
+    width: 31%;
+    height: 30%;
+    border-radius: 20px;
+  }
+
+  .selling-carousel-actions {
+    gap: 10px;
+    margin-block-end: 6px;
+  }
+
+  .selling-carousel-window {
+    margin-block-start: 20px;
+  }
+
+  .hero-card-cluster {
+    grid-template-columns: minmax(116px, 132px) minmax(0, 1fr);
+    gap: 12px;
+    margin-block-start: 18px;
+  }
+
+  .hero-floating {
+    margin-block-start: 0;
+    padding: 14px 16px;
+  }
+
+  .hero-floating.start {
+    align-content: center;
+    min-height: 118px;
+    border-radius: 28px;
+  }
+
+  .hero-floating.start strong {
+    font-size: 1.42rem;
+  }
+
+  .hero-floating.end {
+    max-width: none;
+    border-radius: 22px;
+  }
+
+  .hero-floating.end .muted {
+    font-size: 0.78rem;
   }
 
   .sales-highlight-card {
@@ -3412,11 +3499,11 @@ img {
 
   .about-hero-copy h1 {
     font-size: clamp(2.4rem, 13vw, 4.1rem);
-    line-height: 1;
+    line-height: 1.08;
   }
 
   .about-hero-copy p:not(.eyebrow) {
-    line-height: 1.85;
+    line-height: 1.95;
   }
 
   .about-hero-board {
