@@ -232,8 +232,13 @@ img {
   display: block;
 }
 
-.hero-title-wordmark span {
+.hero-title-mobile,
+.hero-title-desktop {
   display: inline;
+}
+
+.hero-title-desktop {
+  display: none;
 }
 
 .hero-title-stretch {
@@ -295,6 +300,14 @@ img {
     justify-content: center;
     gap: 0.45ch;
     white-space: nowrap;
+  }
+
+  .hero-title-mobile {
+    display: none;
+  }
+
+  .hero-title-desktop {
+    display: inline;
   }
 
   .hero-title-stretch {

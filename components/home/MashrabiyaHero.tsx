@@ -14,9 +14,16 @@ export function MashrabiyaHero() {
         <div className="hero-copy">
           <span className="chip">الرياض وجدة</span>
           <h1 className="display-title hero-title-wordmark">
-            <span>عقارك يبدأ</span>
-            <span className="hero-title-stretch">مــــن</span>
-            <span>النخبة</span>
+            <span className="hero-title-mobile">عقارك يبدأ من النخبة</span>
+            <span aria-hidden="true" className="hero-title-desktop">
+              عقارك يبدأ
+            </span>
+            <span aria-hidden="true" className="hero-title-desktop hero-title-stretch">
+              مــــن
+            </span>
+            <span aria-hidden="true" className="hero-title-desktop">
+              النخبة
+            </span>
           </h1>
           <p>فرص عقارية مختارة في الرياض وجدة، بخبرة تحفظ القرار والقيمة.</p>
           <div className="hero-actions">
