@@ -3364,6 +3364,12 @@ img {
     text-align: center;
   }
 
+  .hero-title-mobile {
+    display: inline-block;
+    font-size: clamp(1.54rem, 7vw, 2.08rem);
+    white-space: nowrap;
+  }
+
   .hero-actions,
   .actions-row {
     justify-content: center;
